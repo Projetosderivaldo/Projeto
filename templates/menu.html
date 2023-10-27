@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Calibri');
+        body {background-color: white; color: black; font-family: 'Calibri'; display: flex; flex-direction: column; align-items: center; justify-content: flex-start; height: 100vh; padding-top: 30px;}
+        ul   {list-style-type: none; margin: 0; padding: 0; text-align: center; position:relative; z-index:1;}
+        li   {display: inline-block; margin-right: 40px;}
+        a    {text-decoration: none; color: white; font-size: 1.3em;}
+        .logo {position:absolute; top:10px; left:10px; width: 150px; border-radius: 50%;}
+        .menu-item {border-bottom: 3px solid royalblue;}
+        .menu-item:hover {background-color: rgba(65,105,225,0.9); color:white;} /* Adiciona realce ao passar o mouse */
+        .logout {position:absolute; right:10px; top:10px; background-color:white; color:black; padding:5px 10px; border-radius:5px; font-size:0.8em;}
+        .menu-bar {background-color:#333333;height:75px;width:100%;position:absolute;top:0;left:0;}
+    </style>
+</head>
+<body>
+    <div class="menu-bar"></div>
+    <img class="logo" src="/static/logo.png" alt="Logo da empresa">
+    <ul>
+        <li class="menu-item"><a href="/cadastro_imoveis">Cadastro de imóveis</a></li>
+        <li class="menu-item"><a href="/cadastro_reservas">Cadastro de reservas</a></li>
+        <li class="menu-item"><a href="/cadastro_despesas">Cadastro de despesas</a></li>
+    </ul>
+    <a class="logout" href="/logout">Logout</a>
+</body>
+</html>
+
+
+
+
+
+
+
+
